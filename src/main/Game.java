@@ -21,7 +21,7 @@ public class Game {
 
         prn.PrintStr();
         prn.setStr("17. yüzyılda anadolunun kervan geçen kuş uçan bir köyünde, uluslararası üne sahip aşkar dinlenme" +
-                "tesisleri ile bir franchise sözleşmesi yapmış bulunmaktasın.");
+                "tesisleri ile bir franchise sözleşmesi yapmış bulunmaktasın.\n");
         prn.PrintStr();
         prn.setWait(5000);
         prn.setStr("Bu sözleşmenin yükümlülükleri gereğince kervansarayın itibarını korumalı, " +
@@ -35,39 +35,48 @@ public class Game {
         prn.setStr("By the way, adın neydi ?");
         prn.PrintStr();
         plyr.setName(scn.nextLine());
-
+        DailyRoutine dr = new DailyRoutine(plyr, crvn, null, null, 2);
 
         while(crvn.reputation > 25){
-            int GuestId =r.nextInt(2);
-            switch (GuestId){
-                case 0:
-                    Merchant mrc = new Merchant("Hassan", 100, 20, 2, 'm');
-                    prn.setStr("çin'in ipeğini konstantini'ye taşıyan bir tüccarım" +
-                            "bir gece konaklamak istiyorum");
-                    prn.PrintStr();
-                    prn.setStr("misafir geldi." + plyr.getName() + " kapıyı açacak mısın ? (Y/N)");
-                    prn.PrintStr();
-                    plyr.setNextAccept(scn.nextLine().charAt(0));
-                    plyr.setNextGuest(mrc);
-                    if(plyr.getNextAccept() == 'Y')
-                        mrc.setAccept(plyr.getNextAccept());
-                        DailyRoutine dr = new DailyRoutine(plyr, crvn, mrc, null, 2);
+            prn.setStr("bugün daha fazla konuk almak ister misin? : Press to 'E'/'C'. \n(E for ENOUGH/C for contiue!). ");
+            prn.PrintStr();
+            plyr.setNextAccept(scn.nextLine().charAt(0));
+            if(plyr.getNextAccept() == 'E')
+                dr.EndofDay();
+            if(plyr.getNextAccept() == 'C'){
+                int GuestId =r.nextInt(2);
+                switch (GuestId){
+                    case 0:
+                        Merchant mrc = new Merchant("Hassan", 100, 20, 2, 'm');
+                        prn.setStr("çin'in ipeğini konstantini'ye taşıyan bir tüccarım" +
+                                "bir gece konaklamak istiyorum");
+                        prn.PrintStr();
+                        prn.setStr("misafir geldi." + plyr.getName() + " kapıyı açacak mısın ? (Y/N)");
+                        prn.PrintStr();
+                        plyr.setNextAccept(scn.nextLine().charAt(0));
+                        plyr.setNextGuest(mrc);
+                        if(plyr.getNextAccept() == 'Y')
+                            mrc.setAccept(plyr.getNextAccept());
+                        dr = new DailyRoutine(plyr, crvn, mrc, null, 2);
                         dr.Action();
                         dr.Info();
-                case 1:
-                    int tMoney = r.nextInt(45);
-                    Thief thf = new Thief("hood robin", tMoney, 25, -15, 't');
-                    prn.setStr("bir gecelik odaya ihityacım var!");
-                    prn.PrintStr();
-                    prn.setStr("misafir geldi." + plyr.getName() + " kapıyı açacak mısın ? (Y/N)");
-                    prn.PrintStr();
-                    plyr.setNextAccept(scn.nextLine().charAt(0));
-                    plyr.setNextGuest(thf);
-                    if(plyr.getNextAccept() == 'Y')
-                        thf.setAccept(plyr.getNextAccept());
+                    case 1:
+                        int tMoney = r.nextInt(15);
+                        Thief thf = new Thief("hood robin", tMoney, 25, -15, 't');
+                        prn.setStr("bir gecelik odaya ihityacım var!");
+                        prn.PrintStr();
+                        prn.setStr("misafir geldi." + plyr.getName() + " kapıyı açacak mısın ? (Y/N)");
+                        prn.PrintStr();
+                        plyr.setNextAccept(scn.nextLine().charAt(0));
+                        plyr.setNextGuest(thf);
+                        if(plyr.getNextAccept() == 'Y')
+                            thf.setAccept(plyr.getNextAccept());
                         // dr = new DailyRoutine(plyr, crvn, null, thf);
                         dr = new DailyRoutine(plyr, crvn, null, thf, 2);
                         dr.Action();
+
+            }
+
 
             }
 

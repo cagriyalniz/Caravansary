@@ -5,6 +5,9 @@ public class Thief extends Guest{
         super(name, money, power, reputation, type);
     }
 
+    public void ThiefAction(Thief thf){
+
+    }
     public void Stoling(){
 
     }

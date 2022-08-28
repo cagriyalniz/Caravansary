@@ -1,24 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c2a2fe0-06f9-4963-bc0f-cef5f4df6d79" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/caravansary.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/characters/Guest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/characters/Merchant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/characters/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/characters/Thief.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Caravansary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/DailyRoutine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Print.java" afterDir="false" />
+    <list default="true" id="7c2a2fe0-06f9-4963-bc0f-cef5f4df6d79" name="Changes" comment="getNextAccept 'char' oldu. dr case'lere alindi. dr'ye generic olrk objlr alindi">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/Thief.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Thief.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/DailyRoutine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/DailyRoutine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +37,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main.Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Game" />
@@ -86,6 +73,35 @@
       <option name="presentableId" value="Default" />
       <updated>1661077611498</updated>
     </task>
+    <task id="LOCAL-00001" summary="project created">
+      <created>1661084582798</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661084582798</updated>
+    </task>
+    <task id="LOCAL-00002" summary="guest created">
+      <created>1661084647820</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661084647820</updated>
+    </task>
+    <task id="LOCAL-00003" summary="game created">
+      <created>1661084771000</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661084771000</updated>
+    </task>
+    <task id="LOCAL-00004" summary="getNextAccept 'char' oldu. dr case'lere alindi. dr'ye generic olrk objlr alindi">
+      <created>1661717065782</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661717065782</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,10 +109,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project created" />
+    <MESSAGE value="guest created" />
+    <MESSAGE value="game created" />
+    <MESSAGE value="getNextAccept 'char' oldu. dr case'lere alindi. dr'ye generic olrk objlr alindi" />
+    <option name="LAST_COMMIT_MESSAGE" value="getNextAccept 'char' oldu. dr case'lere alindi. dr'ye generic olrk objlr alindi" />
   </component>
 </project>
