@@ -1,17 +1,16 @@
 package characters;
 
 public class Player {
-    String  name;
-    int     power;
+    String      name;
+    int         power;
 
-    boolean     nextAccept;
-
+    char     nextAccept;
     Guest       nextGuest;
 
     public Player(String name, int power) {
         this.name = name;
         this.power = power;
-        this.nextAccept = false;
+        this.nextAccept = 'N';
     }
 
     public String getName() {
@@ -30,11 +29,11 @@ public class Player {
         this.power = power;
     }
 
-    public boolean getNextAccept() {
+    public char getNextAccept() {
         return nextAccept;
     }
 
-    public void setNextAccept(boolean nextAccept) {
+    public void setNextAccept(char nextAccept) {
         this.nextAccept = nextAccept;
     }
 

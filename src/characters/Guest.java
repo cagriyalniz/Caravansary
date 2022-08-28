@@ -11,7 +11,7 @@ public class Guest {
 
     String  str;
 
-    boolean accept;
+    char accept;
 
     char type;
 
@@ -24,7 +24,7 @@ public class Guest {
             this.makeFuss = 10;
         else
             this.makeFuss = 0;
-        this.accept = false;
+        this.accept = 0;
         this.type = type;
     }
 
@@ -76,11 +76,11 @@ public class Guest {
         this.str = str;
     }
 
-    public boolean isAccept() {
+    public char isAccept() {
         return accept;
     }
 
-    public void setAccept(boolean accept) {
+    public void setAccept(char accept) {
         this.accept = accept;
     }
 

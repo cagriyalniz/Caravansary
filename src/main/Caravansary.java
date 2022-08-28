@@ -5,11 +5,13 @@ public class Caravansary {
     int     reputation;
 
     int     guest;
+    int roomCoast;
 
-    public Caravansary(int room, int reputation) {
+    public Caravansary(int room, int reputation, int roomCoast) {
         this.room = room;
         this.reputation = reputation;
         this.guest = 0;
+        this.roomCoast = roomCoast;
     }
 
     public int getRoom() {
@@ -36,5 +38,11 @@ public class Caravansary {
         this.guest = guest;
     }
 
+    public int getRoomCoast() {
+        return roomCoast;
+    }
 
+    public void setRoomCoast(int roomCoast) {
+        this.roomCoast = roomCoast;
+    }
 }
