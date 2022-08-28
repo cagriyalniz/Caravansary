@@ -77,9 +77,11 @@ public class DailyRoutine <T1, T2>{
                 crvn.setReputation(crvn.getReputation() - 15);
         if(ply.getNextGuest().getType() == 'm')
             crvn.setReputation(crvn.getReputation() + 5);
-
+//        if(this.thief != null)
+//            neden fonksiyonlarına çağıramıyorum???
+//            this.thief.
+//            thief.
         if(this.getGuestRequest() <= 0) {
-            this.setGuestRequest(2);//dışarıdan aldığımızı başka bir değişkene atmadan nasıl kullanabiliriz. manuel de yazmak istemiyorum
             EndofDay();
         }
 
@@ -87,6 +89,10 @@ public class DailyRoutine <T1, T2>{
 
     public void EndofDay(){
         System.out.println("Bugün'ü de böyle atlattın. yarına kadar iyice dinlen!");
+        System.out.println("tüm konuklar ayrıldı. odalar boşaltıldı.");
+        crvn.setRoom(5);//dışarıdan aldığımızı başka bir değişkene atmadan nasıl kullanabiliriz. manuel de yazmak istemiyorum
+        this.setGuestRequest(2);//dışarıdan aldığımızı başka bir değişkene atmadan nasıl kullanabiliriz. manuel de yazmak istemiyorum
+
         Info();
     }
     public void Info(){
